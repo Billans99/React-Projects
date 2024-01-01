@@ -11,5 +11,8 @@ function Header() {
         </>
     )
 }
+/*
+ TO DO: comment code, make cards into flex rows
+*/
 
 export default Header
