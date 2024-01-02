@@ -9,7 +9,7 @@ function Card() {
         <img className="pokeImage" src={pokeAvatar} alt="Pokemon character image">
         </img>
         <div className="info-container">
-            <p className ="card-info">Hello this is a test! Hello this is a test! Hello this is a test!</p>
+            <p className ="card-info">Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test!Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test!</p>
         </div>
     </div>
     </>

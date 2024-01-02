@@ -22,18 +22,20 @@ h1{
   padding-top: 30px;
   margin-left: 20px;
   font-size: 3rem;
-  color: rgb(136, 239, 255);
+  color: rgb(255, 222, 36);
 }
 .card-container{
   width: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #e6e6e6;
   color: #eeeeee;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #444444;
   margin: 30px;
   font-size: 1.1rem;
+  display: inline-block;
+  text-align: center;
 }
 
 .pokeImage{
@@ -43,14 +45,26 @@ h1{
 
 .card-info{
   padding-top: 5px;
-  width: 200px;
-  margin: 10px;
+  max-height: 70px;
+  width: 390px;
+  margin-left: 10px;
   font-family:'Courier New', Courier, monospace;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  text-align: left;
+}
+
+.card-container:hover{
+  box-shadow: 0px 0px 10px #ffc400;
+}
+
+.card-info:hover{
+  max-height: 300px;
 }
 
 .info-container{
-  border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   background-color: #808080;
 }
 
