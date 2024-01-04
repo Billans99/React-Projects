@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './assets/pokedex-paradise-logo.png'
 
+// Header used in all pages of the app, includes logo and brand name
 function Header() {
     return(
         <>
@@ -11,8 +12,5 @@ function Header() {
         </>
     )
 }
-/*
- TO DO: comment code, make cards into flex rows
-*/
 
 export default Header
