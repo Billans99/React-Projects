@@ -1,11 +1,24 @@
 import Header from './Header.jsx'
 import Card from './Card.jsx'
+import Load from './Load.jsx'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [allPokemon, setAllPokemon] = useState([])
+  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
+
+  const getAllPokemon = async () => {
+    const res = await fetch(loadMore)
+    const daa = res.json()
+
+    console.log(data)
+
+    useEffect(() => {
+      getAllPokemon()
+    }, [])
+  }
 
   return (
     <>
@@ -22,6 +35,15 @@ function App() {
       <Card/>
       <Card/>
       <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Load/>
     </>
   )
 }
