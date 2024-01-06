@@ -1,16 +1,17 @@
 
 import React from 'react'
-import pokeAvatar from './assets/pikachu-image.png'
+ /*import pokeAvatar from 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png' */
 
 // Pokemon profile card: includes container, image, and Pokemon info
 function Card() {
     return(
     <> 
     <div className="card-container"> 
-        <img className="pokeImage" src={pokeAvatar} alt="Pokemon character image">
+        <img className="pokeImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokemon character image">
         </img>
         <div className="info-container">
-            <p className ="card-info">Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test!Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test! Hello this is a test!</p>
+            <h3 className="name">Pikachu</h3>
+            <p className ="card-info">Electric</p>
         </div>
     </div>
     </>
