@@ -11,9 +11,10 @@ function Card() {
         </img>
         <div className="info-container">
             <h3 className="name">Pikachu</h3>
-            <p className ="card-info">Electric</p>
+            {/* This is will differ from abilties, we are using type */}
+            <p className="type-info">Electric</p>
         </div>
-    </div>
+    </div> 
     </>
     )
 }
