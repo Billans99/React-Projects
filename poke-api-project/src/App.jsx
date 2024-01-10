@@ -1,5 +1,5 @@
 import Header from './Header.jsx'
-import Card from './Card.jsx'
+import Cards from './Cards.jsx'
 import Load from './Load.jsx'
 import axios from 'axios'
 
@@ -49,7 +49,7 @@ function App() {
   return (
     <>
       <Header/>
-      <Card pokemon={pokeData} loading={loading}/>
+      <Cards pokemon={pokeData} loading={loading}/>
       <Load/>
     </>
   )

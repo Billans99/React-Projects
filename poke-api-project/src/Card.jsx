@@ -4,7 +4,7 @@ import React from 'react'
 
 // Pokemon profile card: includes container, image, and type
 
-function Card({ pokemon, loading }) { 
+function Cards({ pokemon, loading }) { 
     console.log(pokemon)
 
     return(
