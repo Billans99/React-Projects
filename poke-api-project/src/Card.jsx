@@ -15,7 +15,7 @@ function Card({ pokemon, loading }) {
             return(
                 <>
                     <div className="card-container"> 
-                        <img className="pokeImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokemon character image">
+                        <img className="pokeImage" src={item.sprites.front_default} alt="Pokemon character image">
                         </img>
                         <div className="info-container">
                             <h3 className="name">{item.name}</h3>
