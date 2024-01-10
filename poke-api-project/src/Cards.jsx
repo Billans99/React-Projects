@@ -35,4 +35,4 @@ function Cards({ pokemon, loading }) {
     )
 }
 
-export default Card
+export default Cards
