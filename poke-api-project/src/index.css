@@ -89,7 +89,7 @@ h1{
   display: block;
   margin: 0 auto;
   border-radius: 10px;
-  width: 210px;
+  width: 180px;
   height: 30px;
   font-size: 1.2rem;
   background-color: rgb(235, 235, 235);
@@ -98,7 +98,7 @@ h1{
 
 .search-btn:hover{
   color: #ffffff;
-  background-color: #4e63ff;
+  background-color: #1c2884;
 }
 
 /* Pokemon profile container */
