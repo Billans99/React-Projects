@@ -3,7 +3,7 @@ function Search() {
 
     return(
         <>
-        <h2 className="search-bar">Search bar goes here</h2>
+        <h2>Search bar</h2>
         </>
     )
 }
