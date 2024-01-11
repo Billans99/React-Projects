@@ -20,10 +20,7 @@ function Cards({ pokemon, loading }) {
                         <div className="info-container">
                             <h2 className="id">{item.id}</h2>
                             <h3 className="name">{item.name}</h3>
-                            {/* <p className="type-info">{}</p> */}
-                            {console.log("item.types", item.types)}
-                            
-                           {item.types.map((type) => <p>{type.type.name}</p>)}
+                            {item.types.map((type) => <p>{type.type.name}</p>)}
                         </div>
                     </div> 
                 </>
