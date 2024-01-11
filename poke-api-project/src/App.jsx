@@ -47,6 +47,17 @@ function App() {
       <Header/>
       <Search/>
       <Cards pokemon={pokeData} loading={loading}/>
+        <div className="btns-container">
+          <button className="prev-btn" onClick={() => {
+                setUrl(prevUrl)
+                getPokemon()
+            }}>Previous</button>
+
+          <button className="next-btn" onClick={() => {
+                setUrl(nextUrl)
+                getPokemon()
+            }}>Next</button>
+        </div>
       <Load/>
     </>
   )
