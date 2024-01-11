@@ -1,4 +1,5 @@
 import Header from './Header.jsx'
+import Search from './Search.jsx'
 import Cards from './Cards.jsx'
 import Load from './Load.jsx'
 import axios from 'axios'
@@ -44,6 +45,7 @@ function App() {
   return (
     <>
       <Header/>
+      <Search/>
       <Cards pokemon={pokeData} loading={loading}/>
       <Load/>
     </>
