@@ -1,7 +1,7 @@
 import Header from './Header.jsx'
 import Search from './Search.jsx'
 import Cards from './Cards.jsx'
-import Load from './Load.jsx'
+import Footer from './Footer.jsx'
 import axios from 'axios'
 
 import { useEffect, useState } from 'react'
@@ -11,14 +11,14 @@ function App() {
   const [pokeData, setPokeData] = useState([])
   const [loading, setLoading] = useState(false)
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/")
-  const [nextUrl, setNextUrl] = useState()
-  const [prevUrl, setPrevUrl] = useState()
+  const [nextUrl, setNextUrl] = useState("")
+  const [prevUrl, setPrevUrl] = useState("")
 
   const pokeFun=async () => {
     if (loading) return
 
     setLoading(true)
-    console.log("postloading", loading)
+    console.log("url", url)
     const res=await axios.get(url)
     console.log(res)
     setNextUrl(res.data.next)
@@ -27,6 +27,8 @@ function App() {
     setLoading(false)
     // console.log(pokeData)
   }
+
+  // Takes in array of pokemon and set new pokeData state 
   const getPokemon=async(res) => {
     const responses = await Promise.all(
       res.map((pokemon) => {
@@ -40,27 +42,17 @@ function App() {
 
   useEffect(() => {
     pokeFun()
-  }, [])
+  }, [url])
 
   return (
     <>
       <Header/>
-      <Search/>
+      {/* <Search/> */}
       <Cards pokemon={pokeData} loading={loading}/>
-        <div className="btns-container">
-          <button className="prev-btn" onClick={() => {
-                setUrl(prevUrl)
-                getPokemon()
-            }}>Previous</button>
-
-          <button className="next-btn" onClick={() => {
-                setUrl(nextUrl)
-                getPokemon()
-            }}>Next</button>
-        </div>
-      <Load/>
+      <Footer setUrl={prevUrl}/>
     </>
-  )
-}
+    )
+  }
 
 export default App
+
